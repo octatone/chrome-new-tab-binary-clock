@@ -6,5 +6,11 @@
 
   "chrome_url_overrides": {
     "newtab": "html/clock.html"
-  }
+  },
+
+  "options_page": "html/options.html",
+
+  "permissions": [
+    "storage"
+  ]
 }

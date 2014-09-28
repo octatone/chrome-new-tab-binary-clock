@@ -38,9 +38,9 @@ function createTable () {
   var table = document.createElement('table');
   table.classList.add('clock-table');
   var row, column
-  for (var r=0, rLen=6; r<rLen; r++) {
+  for (var r=0,rLen=6; r<rLen; r++) {
     row = document.createElement('tr');
-    for (var c=0,  cLen=4; c<cLen; c++) {
+    for (var c=0,cLen=4; c<cLen; c++) {
       column = document.createElement('td');
       row.appendChild(column);
     }
@@ -48,6 +48,27 @@ function createTable () {
   }
 
   document.body.appendChild(table);
+}
+
+function loadSettings () {
+
+  chrome.storage.sync.get(null, function (settings) {
+
+    console.debug(settings);
+
+    for (var key in settings) {
+      handleSettings(key, settings[key]);
+    }
+  });
+}
+
+function handleSettings (key, value) {
+
+  if (key === 'theme') {
+    $('body')
+      .removeClass()
+      .addClass('theme-' + value || 1);
+  }
 }
 
 function loop () {
@@ -58,6 +79,7 @@ function loop () {
 
 function start () {
 
+  loadSettings();
   createTable();
   loop();
 }

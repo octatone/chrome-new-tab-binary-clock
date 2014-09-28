@@ -1,0 +1,10 @@
+{
+  "name": "Binary Clock",
+  "description": "A binary clock",
+  "manifest_version": 2,
+  "version": "0.0.0",
+
+  "chrome_url_overrides": {
+    "newtab": "html/clock.html"
+  }
+}

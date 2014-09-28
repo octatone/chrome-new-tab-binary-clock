@@ -1,0 +1,83 @@
+body {
+  font-family: 'Share Tech Mono';
+  position: absolute;;
+  top:0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: 0;
+  padding: 0;
+}
+
+.clock-table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%)
+}
+
+table, tr, td {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+  * Themes
+  */
+
+/* theme 1*/
+body.theme-1 {
+  color: #666;
+  background-color: #333;
+}
+
+/* theme 2*/
+.theme-2 td {
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  color: white;
+  overflow: hidden;
+}
+
+.theme-2 td.on {
+  color: #000;
+  background-color: #000;
+}
+
+/* theme 3*/
+body.theme-3 {
+  background-color: #000;
+}
+
+.theme-3 td {
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  color: black;
+  overflow: hidden;
+}
+
+.theme-3 td.on {
+  color: white;
+  background-color: white;
+}
+
+/* theme 4*/
+body.theme-4 {
+  background-color: #333;
+}
+
+.theme-4 td {
+  height: 10px;
+  width: 10px;
+  line-height: 10px;
+  color: #333;
+  overflow: hidden;
+}
+
+.theme-4 td.on {
+  color: #666;
+  background-color: #666;
+}
+

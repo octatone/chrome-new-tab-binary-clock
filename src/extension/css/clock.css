@@ -35,9 +35,14 @@ body.theme-1 {
   background-color: #333;
 }
 
-/* theme 2*/
+/* theme 2 */
+body.theme-5 {
+  color: black;
+  background-color: white;
+}
 
-.theme-2 td {
+/* theme 3*/
+.theme-3 td {
   height: 10px;
   width: 10px;
   line-height: 10px;
@@ -45,18 +50,18 @@ body.theme-1 {
   overflow: hidden;
 }
 
-.theme-2 td.on {
+.theme-3 td.on {
   color: #000;
   background-color: #000;
 }
 
-/* theme 3*/
-body.theme-3 {
+/* theme 4*/
+body.theme-4 {
   color: white;
   background-color: #000;
 }
 
-.theme-3 td {
+.theme-4 td {
   height: 10px;
   width: 10px;
   line-height: 10px;
@@ -64,18 +69,18 @@ body.theme-3 {
   overflow: hidden;
 }
 
-.theme-3 td.on {
+.theme-4 td.on {
   color: white;
   background-color: white;
 }
 
-/* theme 4 */
-body.theme-4 {
+/* theme 5 */
+body.theme-5 {
   color: #666;
   background-color: #333;
 }
 
-.theme-4 td {
+.theme-5 td {
   height: 10px;
   width: 10px;
   line-height: 10px;
@@ -83,14 +88,36 @@ body.theme-4 {
   overflow: hidden;
 }
 
-.theme-4 td.on {
+.theme-5 td.on {
   color: #666;
   background-color: #666;
 }
 
-/* theme 5 */
-body.theme-5 {
-  color: black;
-  background-color: white;
+/* theme 6 */
+body.theme-6 {
+  color: #666;
+  background-color: #333;
+}
+
+.theme-6 tr td {
+  text-indent: -999px;
+}
+
+.theme-6 td {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  line-height: 10px;
+  background-color: #111;
+  color: #111;
+  overflow: hidden;
+
+  transition: all .2s ease-in;
+}
+
+.theme-6 td.on {
+  color: #666;
+  background-color: #666;
+  box-shadow: 0 0 3px white;
 }
 
